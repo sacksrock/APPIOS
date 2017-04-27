@@ -9,11 +9,17 @@
 /* Begin PBXBuildFile section */
 		1C70E46D1EB1F1000085A05B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C70E46C1EB1F1000085A05B /* AppDelegate.swift */; };
 		1C70E46F1EB1F1000085A05B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C70E46E1EB1F1000085A05B /* ViewController.swift */; };
-		1C70E4721EB1F1000085A05B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C70E4701EB1F1000085A05B /* Main.storyboard */; };
 		1C70E4741EB1F1000085A05B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C70E4731EB1F1000085A05B /* Assets.xcassets */; };
 		1C70E4771EB1F1000085A05B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C70E4751EB1F1000085A05B /* LaunchScreen.storyboard */; };
 		1C70E4821EB1F1000085A05B /* SHISH_COMPANYTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C70E4811EB1F1000085A05B /* SHISH_COMPANYTests.swift */; };
 		1C70E48D1EB1F1000085A05B /* SHISH_COMPANYUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C70E48C1EB1F1000085A05B /* SHISH_COMPANYUITests.swift */; };
+		1C70E49D1EB1FB010085A05B /* VCRegistro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C70E49C1EB1FB010085A05B /* VCRegistro.swift */; };
+		1C70E49F1EB204FA0085A05B /* DataHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C70E49E1EB204FA0085A05B /* DataHolder.swift */; };
+		1C70E4A21EB20CF00085A05B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C70E4A01EB20CF00085A05B /* Main.storyboard */; };
+		1C70E4A61EB215D10085A05B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1C70E4A51EB215D10085A05B /* GoogleService-Info.plist */; };
+		92D9B1BD36F1231BBAF7DC8B /* Pods_SHISH_COMPANY.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AFDC8EC9649CDC5BCA4C693 /* Pods_SHISH_COMPANY.framework */; };
+		9877FE7E645CE8F2E7425096 /* Pods_SHISH_COMPANYUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7908B09B368153E597F44E9 /* Pods_SHISH_COMPANYUITests.framework */; };
+		B035C6F2056CF67481EA9545 /* Pods_SHISH_COMPANYTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C17088E80573E4D2B190DDDE /* Pods_SHISH_COMPANYTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,10 +40,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0E586586EA12BE3FE5FB7673 /* Pods-SHISH&COMPANYTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SHISH&COMPANYTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SHISH&COMPANYTests/Pods-SHISH&COMPANYTests.debug.xcconfig"; sourceTree = "<group>"; };
+		1AFDC8EC9649CDC5BCA4C693 /* Pods_SHISH_COMPANY.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SHISH_COMPANY.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C70E4691EB1F1000085A05B /* SHISH&COMPANY.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SHISH&COMPANY.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C70E46C1EB1F1000085A05B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1C70E46E1EB1F1000085A05B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		1C70E4711EB1F1000085A05B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1C70E4731EB1F1000085A05B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1C70E4761EB1F1000085A05B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1C70E4781EB1F1000085A05B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +54,17 @@
 		1C70E4881EB1F1000085A05B /* SHISH&COMPANYUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SHISH&COMPANYUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C70E48C1EB1F1000085A05B /* SHISH_COMPANYUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SHISH_COMPANYUITests.swift; sourceTree = "<group>"; };
 		1C70E48E1EB1F1000085A05B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1C70E49C1EB1FB010085A05B /* VCRegistro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VCRegistro.swift; sourceTree = "<group>"; };
+		1C70E49E1EB204FA0085A05B /* DataHolder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataHolder.swift; sourceTree = "<group>"; };
+		1C70E4A11EB20CF00085A05B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1C70E4A51EB215D10085A05B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		427729AC3E83D26553C02A3D /* Pods-SHISH&COMPANYUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SHISH&COMPANYUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SHISH&COMPANYUITests/Pods-SHISH&COMPANYUITests.release.xcconfig"; sourceTree = "<group>"; };
+		6C2EFBABB3CC7A458545C776 /* Pods-SHISH&COMPANY.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SHISH&COMPANY.release.xcconfig"; path = "Pods/Target Support Files/Pods-SHISH&COMPANY/Pods-SHISH&COMPANY.release.xcconfig"; sourceTree = "<group>"; };
+		959C53094F1DB48B06D87805 /* Pods-SHISH&COMPANYTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SHISH&COMPANYTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SHISH&COMPANYTests/Pods-SHISH&COMPANYTests.release.xcconfig"; sourceTree = "<group>"; };
+		B7908B09B368153E597F44E9 /* Pods_SHISH_COMPANYUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SHISH_COMPANYUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF2A93EACA364CC0A0A25629 /* Pods-SHISH&COMPANYUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SHISH&COMPANYUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SHISH&COMPANYUITests/Pods-SHISH&COMPANYUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C17088E80573E4D2B190DDDE /* Pods_SHISH_COMPANYTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SHISH_COMPANYTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F56FC9D6F24FDCD742B0BEDE /* Pods-SHISH&COMPANY.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SHISH&COMPANY.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SHISH&COMPANY/Pods-SHISH&COMPANY.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92D9B1BD36F1231BBAF7DC8B /* Pods_SHISH_COMPANY.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B035C6F2056CF67481EA9545 /* Pods_SHISH_COMPANYTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9877FE7E645CE8F2E7425096 /* Pods_SHISH_COMPANYUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +102,8 @@
 				1C70E4801EB1F1000085A05B /* SHISH&COMPANYTests */,
 				1C70E48B1EB1F1000085A05B /* SHISH&COMPANYUITests */,
 				1C70E46A1EB1F1000085A05B /* Products */,
+				4789D6D684F2F1235ABF841B /* Pods */,
+				DB9D6E372A58CDC969B1B4C8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,12 +120,15 @@
 		1C70E46B1EB1F1000085A05B /* SHISH&COMPANY */ = {
 			isa = PBXGroup;
 			children = (
+				1C70E4A51EB215D10085A05B /* GoogleService-Info.plist */,
 				1C70E46C1EB1F1000085A05B /* AppDelegate.swift */,
 				1C70E46E1EB1F1000085A05B /* ViewController.swift */,
-				1C70E4701EB1F1000085A05B /* Main.storyboard */,
+				1C70E4A01EB20CF00085A05B /* Main.storyboard */,
 				1C70E4731EB1F1000085A05B /* Assets.xcassets */,
 				1C70E4751EB1F1000085A05B /* LaunchScreen.storyboard */,
 				1C70E4781EB1F1000085A05B /* Info.plist */,
+				1C70E49C1EB1FB010085A05B /* VCRegistro.swift */,
+				1C70E49E1EB204FA0085A05B /* DataHolder.swift */,
 			);
 			path = "SHISH&COMPANY";
 			sourceTree = "<group>";
@@ -125,6 +151,29 @@
 			path = "SHISH&COMPANYUITests";
 			sourceTree = "<group>";
 		};
+		4789D6D684F2F1235ABF841B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F56FC9D6F24FDCD742B0BEDE /* Pods-SHISH&COMPANY.debug.xcconfig */,
+				6C2EFBABB3CC7A458545C776 /* Pods-SHISH&COMPANY.release.xcconfig */,
+				0E586586EA12BE3FE5FB7673 /* Pods-SHISH&COMPANYTests.debug.xcconfig */,
+				959C53094F1DB48B06D87805 /* Pods-SHISH&COMPANYTests.release.xcconfig */,
+				BF2A93EACA364CC0A0A25629 /* Pods-SHISH&COMPANYUITests.debug.xcconfig */,
+				427729AC3E83D26553C02A3D /* Pods-SHISH&COMPANYUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DB9D6E372A58CDC969B1B4C8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1AFDC8EC9649CDC5BCA4C693 /* Pods_SHISH_COMPANY.framework */,
+				C17088E80573E4D2B190DDDE /* Pods_SHISH_COMPANYTests.framework */,
+				B7908B09B368153E597F44E9 /* Pods_SHISH_COMPANYUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +181,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1C70E4911EB1F1000085A05B /* Build configuration list for PBXNativeTarget "SHISH&COMPANY" */;
 			buildPhases = (
+				C12456FF20E92407E0B49568 /* [CP] Check Pods Manifest.lock */,
 				1C70E4651EB1F1000085A05B /* Sources */,
 				1C70E4661EB1F1000085A05B /* Frameworks */,
 				1C70E4671EB1F1000085A05B /* Resources */,
+				0105FEB85CA22249ACE1EE18 /* [CP] Embed Pods Frameworks */,
+				3C36D35091A2770A27B1A5D3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +201,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1C70E4941EB1F1000085A05B /* Build configuration list for PBXNativeTarget "SHISH&COMPANYTests" */;
 			buildPhases = (
+				29A0FDF878162B11C7DB0F62 /* [CP] Check Pods Manifest.lock */,
 				1C70E4791EB1F1000085A05B /* Sources */,
 				1C70E47A1EB1F1000085A05B /* Frameworks */,
 				1C70E47B1EB1F1000085A05B /* Resources */,
+				C70720A57E666239DBCD9E99 /* [CP] Embed Pods Frameworks */,
+				EB2B84754438702FE27CA1A8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +222,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1C70E4971EB1F1000085A05B /* Build configuration list for PBXNativeTarget "SHISH&COMPANYUITests" */;
 			buildPhases = (
+				10750205EAF445DA6916175C /* [CP] Check Pods Manifest.lock */,
 				1C70E4841EB1F1000085A05B /* Sources */,
 				1C70E4851EB1F1000085A05B /* Frameworks */,
 				1C70E4861EB1F1000085A05B /* Resources */,
+				D4D4C5441D34249F80BF873E /* [CP] Embed Pods Frameworks */,
+				280A5A80E1F1A9136D73B922 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -232,9 +290,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C70E4A21EB20CF00085A05B /* Main.storyboard in Resources */,
+				1C70E4A61EB215D10085A05B /* GoogleService-Info.plist in Resources */,
 				1C70E4771EB1F1000085A05B /* LaunchScreen.storyboard in Resources */,
 				1C70E4741EB1F1000085A05B /* Assets.xcassets in Resources */,
-				1C70E4721EB1F1000085A05B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,6 +313,144 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0105FEB85CA22249ACE1EE18 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SHISH&COMPANY/Pods-SHISH&COMPANY-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		10750205EAF445DA6916175C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		280A5A80E1F1A9136D73B922 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SHISH&COMPANYUITests/Pods-SHISH&COMPANYUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		29A0FDF878162B11C7DB0F62 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		3C36D35091A2770A27B1A5D3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SHISH&COMPANY/Pods-SHISH&COMPANY-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C12456FF20E92407E0B49568 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C70720A57E666239DBCD9E99 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SHISH&COMPANYTests/Pods-SHISH&COMPANYTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D4D4C5441D34249F80BF873E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SHISH&COMPANYUITests/Pods-SHISH&COMPANYUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EB2B84754438702FE27CA1A8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SHISH&COMPANYTests/Pods-SHISH&COMPANYTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1C70E4651EB1F1000085A05B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -261,6 +458,8 @@
 			files = (
 				1C70E46F1EB1F1000085A05B /* ViewController.swift in Sources */,
 				1C70E46D1EB1F1000085A05B /* AppDelegate.swift in Sources */,
+				1C70E49D1EB1FB010085A05B /* VCRegistro.swift in Sources */,
+				1C70E49F1EB204FA0085A05B /* DataHolder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,20 +495,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		1C70E4701EB1F1000085A05B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1C70E4711EB1F1000085A05B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		1C70E4751EB1F1000085A05B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				1C70E4761EB1F1000085A05B /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		1C70E4A01EB20CF00085A05B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1C70E4A11EB20CF00085A05B /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -410,6 +609,7 @@
 		};
 		1C70E4921EB1F1000085A05B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F56FC9D6F24FDCD742B0BEDE /* Pods-SHISH&COMPANY.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "SHISH&COMPANY/Info.plist";
@@ -422,6 +622,7 @@
 		};
 		1C70E4931EB1F1000085A05B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C2EFBABB3CC7A458545C776 /* Pods-SHISH&COMPANY.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "SHISH&COMPANY/Info.plist";
@@ -434,6 +635,7 @@
 		};
 		1C70E4951EB1F1000085A05B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E586586EA12BE3FE5FB7673 /* Pods-SHISH&COMPANYTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -448,6 +650,7 @@
 		};
 		1C70E4961EB1F1000085A05B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 959C53094F1DB48B06D87805 /* Pods-SHISH&COMPANYTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -462,6 +665,7 @@
 		};
 		1C70E4981EB1F1000085A05B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF2A93EACA364CC0A0A25629 /* Pods-SHISH&COMPANYUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = "SHISH&COMPANYUITests/Info.plist";
@@ -475,6 +679,7 @@
 		};
 		1C70E4991EB1F1000085A05B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 427729AC3E83D26553C02A3D /* Pods-SHISH&COMPANYUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = "SHISH&COMPANYUITests/Info.plist";
@@ -505,6 +710,7 @@
 				1C70E4931EB1F1000085A05B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1C70E4941EB1F1000085A05B /* Build configuration list for PBXNativeTarget "SHISH&COMPANYTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +719,7 @@
 				1C70E4961EB1F1000085A05B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1C70E4971EB1F1000085A05B /* Build configuration list for PBXNativeTarget "SHISH&COMPANYUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +728,7 @@
 				1C70E4991EB1F1000085A05B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

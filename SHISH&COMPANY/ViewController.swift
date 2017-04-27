@@ -7,9 +7,14 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class ViewController: UIViewController {
-
+    @IBOutlet var btLogear:UIButton?
+    @IBOutlet var txtUser:UITextField?
+    @IBOutlet var txtPass:UITextField?
+    @IBOutlet var failogin:UILabel?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -19,7 +24,19 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    @IBAction func accionbotonLoguear(){
+        if(txtUser?.text != "" && txtPass?.text != ""){
+                
+            FIRAuth.auth()?.signIn(withEmail: (txtUser?.text)!, password: (txtPass?.text)!) { (user, error) in
+                    
+                if(error == nil){
+                    self.performSegue(withIdentifier: "tran1", sender: nil)
+                }
+                else{
+                    print("Error",error!)
+                }
+            }
+        }
+    }
 }
 
