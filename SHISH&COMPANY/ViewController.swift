@@ -25,12 +25,42 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     @IBAction func accionbotonLoguear(){
-        if(txtUser?.text != "" && txtPass?.text != ""){
-                
-            FIRAuth.auth()?.signIn(withEmail: (txtUser?.text)!, password: (txtPass?.text)!) { (user, error) in
+        if(txtUser?.text != "" && txtPass?.text != ""){ //cambiar por usuarios de firebase 
+          //if (user == primer acceso){
+            //vcCompletarRegistro}
+            //else {
+            FIRAuth.auth()?.signIn(withEmail: (txtUser?.text)!, password: (txtPass?.text)!) { (user, error) in // if (rol==1){cliente tab bar1} if (rol==2){tienda tab bar2}
                     
                 if(error == nil){
-                    self.performSegue(withIdentifier: "tran1", sender: nil)
+                    //self.performSegue(withIdentifier: "tran1", sender: nil)
+                    
+                    
+                    let userID = FIRAuth.auth()?.currentUser?.uid
+                    DataHolder.sharedInstance.firDatabaseRef.child("Perfiles").child(userID!).observeSingleEvent(of: .value, with: { (snapshot) in
+                        // Get user value
+                        let value = snapshot.value as? NSDictionary
+                        
+                        if(value == nil){
+                            self.performSegue(withIdentifier: "tranNoExiste", sender: self)
+                        }
+                        else{
+                          print("---->>>>> ",value!["Tipo"])
+                            
+                            if(value!["Tipo"]=="1"){
+                                
+                            }
+                        }
+                        
+                        
+                        
+                        //let username = value?["username"] as? String ?? ""
+                        //let user = User.init(username: username)
+                        
+                        // ...
+                    }) { (error) in
+                        print(error.localizedDescription)
+                    }
+                    
                 }
                 else{
                     print("Error",error!)

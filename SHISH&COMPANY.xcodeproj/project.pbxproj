@@ -17,6 +17,7 @@
 		1C70E49F1EB204FA0085A05B /* DataHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C70E49E1EB204FA0085A05B /* DataHolder.swift */; };
 		1C70E4A21EB20CF00085A05B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C70E4A01EB20CF00085A05B /* Main.storyboard */; };
 		1C70E4A61EB215D10085A05B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1C70E4A51EB215D10085A05B /* GoogleService-Info.plist */; };
+		1CDBB2891EBB0D390081E0AA /* sisha.png in Resources */ = {isa = PBXBuildFile; fileRef = 1CDBB2881EBB0D390081E0AA /* sisha.png */; };
 		92D9B1BD36F1231BBAF7DC8B /* Pods_SHISH_COMPANY.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AFDC8EC9649CDC5BCA4C693 /* Pods_SHISH_COMPANY.framework */; };
 		9877FE7E645CE8F2E7425096 /* Pods_SHISH_COMPANYUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7908B09B368153E597F44E9 /* Pods_SHISH_COMPANYUITests.framework */; };
 		B035C6F2056CF67481EA9545 /* Pods_SHISH_COMPANYTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C17088E80573E4D2B190DDDE /* Pods_SHISH_COMPANYTests.framework */; };
@@ -58,6 +59,7 @@
 		1C70E49E1EB204FA0085A05B /* DataHolder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataHolder.swift; sourceTree = "<group>"; };
 		1C70E4A11EB20CF00085A05B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1C70E4A51EB215D10085A05B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		1CDBB2881EBB0D390081E0AA /* sisha.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sisha.png; sourceTree = SOURCE_ROOT; };
 		427729AC3E83D26553C02A3D /* Pods-SHISH&COMPANYUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SHISH&COMPANYUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SHISH&COMPANYUITests/Pods-SHISH&COMPANYUITests.release.xcconfig"; sourceTree = "<group>"; };
 		6C2EFBABB3CC7A458545C776 /* Pods-SHISH&COMPANY.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SHISH&COMPANY.release.xcconfig"; path = "Pods/Target Support Files/Pods-SHISH&COMPANY/Pods-SHISH&COMPANY.release.xcconfig"; sourceTree = "<group>"; };
 		959C53094F1DB48B06D87805 /* Pods-SHISH&COMPANYTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SHISH&COMPANYTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SHISH&COMPANYTests/Pods-SHISH&COMPANYTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 		1C70E46B1EB1F1000085A05B /* SHISH&COMPANY */ = {
 			isa = PBXGroup;
 			children = (
+				1CDBB2881EBB0D390081E0AA /* sisha.png */,
 				1C70E4A51EB215D10085A05B /* GoogleService-Info.plist */,
 				1C70E46C1EB1F1000085A05B /* AppDelegate.swift */,
 				1C70E46E1EB1F1000085A05B /* ViewController.swift */,
@@ -291,6 +294,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1C70E4A21EB20CF00085A05B /* Main.storyboard in Resources */,
+				1CDBB2891EBB0D390081E0AA /* sisha.png in Resources */,
 				1C70E4A61EB215D10085A05B /* GoogleService-Info.plist in Resources */,
 				1C70E4771EB1F1000085A05B /* LaunchScreen.storyboard in Resources */,
 				1C70E4741EB1F1000085A05B /* Assets.xcassets in Resources */,

@@ -33,7 +33,7 @@ class VCRegistro: UIViewController {
             if(error == nil){
                 self.performSegue(withIdentifier: "tran2", sender: self)
             }
-            else{
+            else if(self.txtRPass != self.txtPasstwo){
                 print("Error",error!)
             }
         }
