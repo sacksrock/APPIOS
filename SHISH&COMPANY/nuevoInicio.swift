@@ -9,5 +9,11 @@
 import UIKit
 
 class nuevoInicio: NSObject {
-
+    var Nombre:String?
+    var Tipo:Int?
+    
+    init(Perfiles:[String:AnyObject]) {
+        Nombre = Perfiles ["Nombre"] as? String
+        Tipo = Perfiles ["Tipo"] as? Int
+    }
 }

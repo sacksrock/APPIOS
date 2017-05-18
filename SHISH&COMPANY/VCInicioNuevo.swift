@@ -9,10 +9,14 @@
 import UIKit
 
 class VCInicioNuevo: UIViewController {
-
+    var perfil:Perfil?
+    @IBOutlet var txtNombre:UITextField?
+    @IBOutlet var txtTipo:UITextField?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        
         // Do any additional setup after loading the view.
     }
 
@@ -20,8 +24,16 @@ class VCInicioNuevo: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    @IBAction func accionBotonAceptar(){
+        let per = Perfil()
+        per.Nombre = txtNombre?.text
+        per.Tipo = Int((txtTipo?.text)!)
+        
+        let uid = DataHolder.sharedInstance.uid
+        DataHolder.sharedInstance.insertarPerfil(perfil: per, userId:uid!)
+    }
     
-
+    
     /*
     // MARK: - Navigation
 

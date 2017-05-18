@@ -9,5 +9,26 @@
 import UIKit
 
 class Perfil: NSObject {
-
+    var Nombre:String?
+    var Tipo:Int?
+    
+    override init() {
+        
+    }
+    
+    init(valores:[String:AnyObject]) {
+        Nombre = valores ["Nombre"] as? String
+        Tipo = valores ["Tipo"] as? Int
+    }
+    
+    func getPerfil() -> [String:AnyObject] {
+        var hm:[String:AnyObject]=[:]
+        hm["Nombre"]=Nombre! as AnyObject
+        hm["Tipo"]=Tipo! as AnyObject
+        
+        return hm
+    }
+    
+    
 }
+

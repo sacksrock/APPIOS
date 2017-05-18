@@ -36,6 +36,7 @@ class ViewController: UIViewController {
                     
                     
                     let userID = FIRAuth.auth()?.currentUser?.uid
+                    DataHolder.sharedInstance.uid = userID
                     DataHolder.sharedInstance.firDatabaseRef.child("Perfiles").child(userID!).observeSingleEvent(of: .value, with: { (snapshot) in
                         // Get user value
                         let value = snapshot.value as? NSDictionary
@@ -44,10 +45,10 @@ class ViewController: UIViewController {
                             self.performSegue(withIdentifier: "tranNoExiste", sender: self)
                         }
                         else{
-                          print("---->>>>> ",value!["Tipo"])
+                          print("---->>>>> ",value!["Tipo"]!)
                             
-                            if(value!["Tipo"]=="1"){
-                                
+                            if(value!["Tipo"] as! Int == 1){
+                                self.performSegue(withIdentifier: "transiciontienda", sender: self)
                             }
                         }
                         
@@ -58,7 +59,7 @@ class ViewController: UIViewController {
                         
                         // ...
                     }) { (error) in
-                        print(error.localizedDescription)
+                        print("!!!!!!!!!!! ",error.localizedDescription)
                     }
                     
                 }

@@ -13,6 +13,8 @@ import FirebaseStorage
 
 
 class DataHolder: NSObject {
+    var uid:String?
+    
     static let sharedInstance:DataHolder=DataHolder()
     
     var firDatabaseRef: FIRDatabaseReference!
@@ -25,6 +27,12 @@ class DataHolder: NSObject {
         firDatabaseRef = FIRDatabase.database().reference()
         firStorage = FIRStorage.storage()
         firStorageRef = firStorage?.reference()
+    }
+    
+    func insertarPerfil(perfil:Perfil,userId uid:String){
+        let rutaTemp = String(format: "/Perfiles/%@",uid)
+        let childUpdates = [rutaTemp:perfil.getPerfil]
+        firDatabaseRef.updateChildValues (childUpdates)
     }
     
 }
