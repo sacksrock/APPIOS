@@ -25,12 +25,13 @@ class VCInicioNuevo: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     @IBAction func accionBotonAceptar(){
-        let per = Perfil()
-        per.Nombre = txtNombre?.text
-        per.Tipo = Int((txtTipo?.text)!)
+        //let per = Perfil()
+        DataHolder.sharedInstance.miPerfil = Perfil()
+        DataHolder.sharedInstance.miPerfil?.Nombre = txtNombre?.text
+        DataHolder.sharedInstance.miPerfil?.Tipo = Int((txtTipo?.text)!)
         
         let uid = DataHolder.sharedInstance.uid
-        DataHolder.sharedInstance.insertarPerfil(perfil: per, userId:uid!)
+        DataHolder.sharedInstance.insertarPerfil(perfil: DataHolder.sharedInstance.miPerfil!, userId:uid!)
     }
     
     

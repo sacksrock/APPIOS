@@ -45,9 +45,11 @@ class ViewController: UIViewController {
                             self.performSegue(withIdentifier: "tranNoExiste", sender: self)
                         }
                         else{
-                          print("---->>>>> ",value!["Tipo"]!)
+                            DataHolder.sharedInstance.miPerfil = Perfil(valores: snapshot.value as! [String : AnyObject])
                             
-                            if(value!["Tipo"] as! Int == 1){
+                          //print("---->>>>> ",DataHolder.sharedInstance.miPerfil?.Tipo!!)
+                            
+                            if(DataHolder.sharedInstance.miPerfil?.Tipo == 1){
                                 self.performSegue(withIdentifier: "transiciontienda", sender: self)
                             }
                         }
