@@ -31,7 +31,7 @@ class DataHolder: NSObject {
     
     func insertarPerfil(perfil:Perfil,userId uid:String){
         let rutaTemp = String(format: "/Perfiles/%@",uid)
-        let childUpdates = [rutaTemp:perfil.getPerfil]
+        let childUpdates = [rutaTemp:perfil.getPerfil()]
         firDatabaseRef.updateChildValues (childUpdates)
     }
     
